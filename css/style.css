@@ -1,0 +1,903 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+/*------------------------HEADER SECTION START----------------------*/
+
+#head_section .container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.bubles{
+    position: relative;
+    display: flex;
+}
+
+.bubles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(11, 240, 103);
+    margin: 0 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(9, 171, 235, 0.384),  0 0 0 20px rgba(19, 174, 235, 0.258) ;
+    animation: animate 15s linear infinite;
+    animation-duration: calc( 100s / var(--i));
+  
+}
+
+.bubles span:nth-child(even){
+    background-color: hotpink;
+    box-shadow: 0 0 0 10px rgba(237, 121, 237, 0.384),  0 0 0 20px rgba(161, 132, 162, 0.258) ;
+}
+
+@keyframes animate {
+    0%{
+    transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+     transform: translateY(-10vh) scale(1.5);
+
+    }
+}
+nav{
+    margin-top: -4rem;
+    background-color: #000000b8;
+    margin-left: -0.5rem !important;
+    z-index: 8888;
+}
+
+nav .menu{
+    float: right;
+    right: 3rem;
+    margin-top: -3.6rem;
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 3;
+}
+
+nav .menu ul li{
+    display: inline-block;
+    padding-left: 2rem;
+    font-size: 1.7rem;
+    list-style-type: none; 
+    font-family: sans-serif;
+    margin-top: -3.5rem;
+
+}
+
+nav .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .title{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.drop .sub_menu{
+    position: absolute;
+    top: 1.5rem;
+    width: 15rem;
+    height: 15.6rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    background-color: #ffffff33;
+    backdrop-filter: blur(10px);
+    padding: 1rem 1rem;
+    display: none;
+}
+
+.drop .sub_menu a{
+    display: block;
+    text-transform: capitalize;
+    line-height: 3rem;
+    padding: 0.2rem 0rem;
+    font-family: sans-serif;
+
+}
+
+.sub_menu a:hover{
+    background-color: #fffc00;
+    color: #000;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.drop:hover .sub_menu{
+    display: block;
+}
+
+canvas.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#selector {
+    height: 100vh;
+}
+
+.ah-headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+#selector h1 {
+    font-size: 65px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    background: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a ion-icon {
+    color: #000;
+    background-color: #ffff00;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#head_section button{
+    background-color: red;
+    position: absolute;
+    padding: 1rem 2rem;
+    bottom: 8rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    z-index: 22;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 2rem;
+}
+
+/*--------------------HEADER SECTION END--------------------*/
+
+
+/*----------------SCERVICE SECTION START ------------------------*/
+
+#service .container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+
+#service .container h2, p{
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+#service .service_grid_item{
+    margin-left: 2rem;
+}
+
+#service .service_grid_item p{
+    color: #fff;
+    font-size: 2rem;
+    text-align: left;
+}
+
+#service .service_grid_item img{
+    margin-bottom: 2rem;
+}
+#service .service_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    margin-top: 10rem;
+    margin-right: 2rem;
+}
+
+#service .service_grid_item:nth(1){
+    padding-left: 3rem;
+}
+
+/*-----------------SCERVICE SECTION END----------------------------*/
+
+/*---------PLANE AND PRICING START ----------------------------- */
+#pp .container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+    background-color: #000;
+}
+
+#pp .container h2{
+    position: absolute;
+    left: 73rem;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+#left{
+    padding: 1rem 1.6rem;
+    position: absolute;
+    top: 26rem;
+    left: 0;
+    z-index: -39;
+}
+
+#right{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 26rem;
+    right: 0;
+}
+
+#right::before
+{
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    top: 8.6px;
+    left: 6px;
+}
+
+
+
+#left{
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 26rem;
+    right: 0;
+}
+
+#left::before
+{
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(-135deg);
+    top: 9px;
+    left: 12px;
+}
+
+#pp ul li{
+    display: block;
+    list-style-type: dot;
+}
+
+.pp_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+}
+
+.pp_grid_item{
+    width: 75%;
+    height: 62vh;
+    background-color: #001538;
+    padding: 2rem 3rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.pp_grid_item h3{
+    margin-left: -22rem;
+    padding: 0.4rem 0rem;
+}
+
+.pp_grid_item .h3{
+    margin-left: 0rem; 
+}
+
+#pp .container button{
+    padding: 0.6rem 1.5rem; 
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#pp .pp_grid_item button{
+    border: none;
+    border-radius: 5px;
+    color: #000;
+
+}
+
+#pp .pp_grid_item button:hover{
+    background-color: #001538;
+    color: #fff;
+}
+
+
+
+#pp .container h2{
+    position: absolute;
+    left: 50rem;
+    padding-bottom: 0.6rem;
+}
+.pp_grid_item h3{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+
+}
+
+.pp_grid_item li{
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+
+}
+
+.pp_grid_item:hover{
+    height: 80vh;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.container_two{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    left: 150rem;
+    top: 0rem;
+    transition: all 1s;
+
+}
+
+
+
+
+/*-------PLANE AND PRICTIG END-------------------------------------*/
+
+/*------------------SKILLS SECTION START------------------*/
+
+#skills .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 5rem 2rem;
+}
+
+#skills .container h1{
+    color: #fff;
+    font-size: 4.4rem;
+    margin-left:   42%;
+    padding: 1rem 0rem;
+    text-transform: capitalize;
+    padding-bottom: 5rem;
+}
+
+#skills .container .box{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.skills_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    
+}
+
+
+
+.skills_grid_item .box .background{
+    width: 20rem;
+    height: 20rem;
+    background: repeating-conic-gradient(from 45deg, #45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 35%,#45f3ff 50%);
+    border-radius: 50%;
+    animation: animate_1 2.5s linear infinite;
+}
+
+.skills_grid .room{
+    width: 80%;
+    height: 55vh;
+    background-color: #022157;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+
+.skills_grid .room:hover .skills_grid_item{
+    transform: translateZ(20px);
+    transition: 1s all;
+ 
+}
+
+.skills_grid .room:hover {
+    transform: rotatey(50deg);
+    transition: 1s all;
+ 
+}
+
+
+.skills_grid .room H2{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+@keyframes animate_1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.skills_grid #in_vaild{
+        display: none;
+    }
+
+
+
+#number, #number_2, #number_3, #number_4{
+    width: 17rem ;
+    height: 17rem;
+    border-radius: 50%;
+    background-color: #001538;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    padding: 6rem;
+}
+
+
+
+
+/*------------------SKILLS SECTION END------------------*/
+
+/*------------------PORTFOLIO SECTION START-----------------*/
+
+#portfolio .container{
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 2rem;
+ }
+
+#portfolio .container h1{
+   margin-left: 45%;
+   padding-bottom: 4rem;
+   font-size: 3rem; 
+   color: #fff;
+}
+
+.folio_grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 2rem;
+    column-gap: 2rem;;
+}
+
+
+.folio_grid_item a img{
+    width: 86%;
+    height: 50vh;
+    transition: 1s all;
+    border-radius: 10px;
+}
+
+.folio_grid_item .bg{
+    width: 95%;
+    height: 67vh;
+    background-color: #000;
+    position: absolute;
+    padding-left: 4rem;
+    padding-top: 4rem;  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: auto;
+   
+}
+
+
+.folio_grid_item{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.folio_grid_item .bg_f{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    background: repeating-conic-gradient(from 45deg, #45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 35%,#45f3ff 50%);
+    animation: b 3s linear infinite;
+    border-radius: 30%;
+}
+
+@keyframes b{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        background: repeating-conic-gradient(from 45deg, #f045ff 0%, #f045ff 5%, transparent 5%, transparent 35%,#f045ff 50%);
+    }
+
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+.folio_grid_item a img:hover{
+    transform: scale(0.9);
+}
+.folio_grid_item .bg a h2{
+   margin-left: 15%;
+   padding: 2rem 0rem;
+   font-size: 2rem; 
+   color: #fff;
+   text-transform: capitalize;
+   text-decoration: none;
+}
+
+.folio_grid_item a{
+    text-decoration: none;
+}
+
+/*------------------PORTFOLIO SECTION END --------------------*/
+
+
+/*------------------ CONTACT SECTION START ----------------------------------*/
+
+#contact{
+    margin-top: 6rem;
+    position: relative;
+}
+
+#contact .container{
+    width: 100%;
+    height: 120vh;
+    padding-top: 5rem;
+}
+
+.a_box{
+    position: relative;
+    width: 35%;
+    height: 90vh;
+    margin: 4% 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.animation{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -7rem;
+    background: repeating-conic-gradient(from 45deg, red 0%, red 5%, transparent 5%, transparent 35%, red 50% );
+    animation: animate-vii 4s linear infinite;
+}
+
+.animation-ii{
+    position: absolute;
+    position: absolute;
+    top: -7rem;
+    width: 110%;
+    height: 110vh;
+    background: repeating-conic-gradient(from -35deg, #20defb 0%, #20defb 5%, transparent 5%, transparent 35%,#20defb 50%);
+    animation: animate-vii 4s linear infinite;
+    border-radius: 10px;
+} 
+
+@keyframes animate-vii{
+   0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+form{
+    position: absolute;
+    width: 96%;
+    height: 87vh;
+    background-color: #001538;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding-top: 5rem;
+    padding-left: 3rem;
+}
+
+form input{
+    width: 90%;
+    height: 8%;
+    color: #fff;
+    background-color: #001538;
+    border-top: transparent;
+    border-right: transparent;
+    border-left:  transparent;
+}
+
+
+form label{
+    color: #fff;
+}
+
+form textarea{
+    width: 90%;
+    height: 10%;
+    background-color: transparent;
+    color: #fff;
+}
+
+.submit_box{
+    width: 7.7rem;
+    height: 4.2rem;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.s_a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.submit_box:hover .s_a{
+    background: repeating-conic-gradient(from -35deg, #20defb 0%, #20defb 5%, transparent 5%, transparent 35%,#20defb 50%);
+    animation: rotate 2s linear infinite;
+
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.submit{
+    height: 3.5rem;
+    padding: 0.5rem 2rem;
+    background-color: #094068;
+    color: #fff;
+    position: absolute;
+    border: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+::placeholder{
+    color: #fff !important;
+    opacity: 0.5; 
+    text-transform: capitalize;
+}
+.a_box{
+    position: absolute;
+    left: -27rem;
+}
+
+.contact_informations{
+    position: absolute;
+    width: 35%;
+    height: 89vh;
+    top: 11rem;
+    right: 15rem;
+
+}
+
+.contact_info_grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr );
+    row-gap: 3.4rem;
+}
+
+.contact_info_grid_item{
+    width: 100%;
+    height: 25vh;
+    background-color: #001538;
+    color: #fff;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 11rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+
+}
+
+.contact_info_grid_item h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+/*------------------ CONTACT SECTION  END ----------------------------------*/
+
+/*-------------------FOOTER SCTION START-----------------------------------*/
+
+
+
+#footer{
+    margin-top: 12rem;
+}
+
+#footer .container{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    padding-top: 15rem;
+    position: relative;
+}
+
+.icons{
+    width: 33%;
+    margin: auto;
+    display: flex;
+}
+
+
+.icons ul li{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    list-style-type: none;
+    background: url(icons.png) no-repeat;
+    background-color: #fff;
+    background-position: -10px -7px;
+    transition: all 0.5s;
+    margin: 1rem;
+}
+
+.icons ul li:hover:nth-child(1){
+    background-position: -10px -90px;
+    transform: scale(1.2);
+}
+
+.icons ul a:hover{
+    text-decoration: none;
+}
+
+.icons ul #li{
+    background-position: -597px -7px;
+}
+
+.icons ul #li:hover{
+    background-position: -597px -90px;
+}
+
+
+.icons ul #li-2{
+    background-position: -345px -8px;
+}
+
+.icons ul #li-2:hover{
+    background-position: -345px -93px;
+}
+
+.icons ul #li-3{
+    background-position: -680px -8px;
+}
+
+.icons ul #li-3:hover{
+    background-position: -680px -90px;
+}
+
+
+#footer .descriptions h3{
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem 40rem;
+}
+.totop{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #fff;
+    position: relative;
+    bottom: 7rem;
+    left: 5rem;
+}
+
+.totop_btn{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+    left: 1.2rem;
+    top: 1.5rem;
+}
+
